@@ -1,0 +1,169 @@
+body {
+    font-family: "Poppins";
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    padding-left: 2%;
+}
+
+
+.navbar-container {
+    padding: 3rem 10%;
+    display: flex;
+}
+
+.navbar-container > :first-child img {
+    width: 80%;
+}
+
+.grow-list {
+    flex: 1;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    justify-content: left;
+    padding: 0 10%;
+}
+
+.list .list-item {
+    padding-right: 5%;
+}
+
+.nav-button {
+    background-color: #5955B3;
+    border: none;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.5rem;
+    
+}
+
+.banner-container {
+    height: 80vh;
+    padding: 1% 0%;
+    padding-left: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-container > :first-child{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: left;
+
+}
+
+
+
+
+.heading-text {
+    font-size: 3rem;
+    color:  #323068;
+    margin-bottom: 0px;
+    line-height: 4rem;
+}
+
+.heading-text span {
+    color:  #514ead;
+}
+
+.description {
+    font-size: 15px;
+    color: rgb(65, 65, 65);
+    font-weight: bold;
+}
+
+.btn {
+    width: 50%;
+    padding: 15px 3px;
+}
+
+img {
+    width: 60vw;
+}
+
+
+/* mobile site */
+
+@media screen and (max-width:900px){
+    
+    .heading-text {
+        font-size: 2rem;
+        color:  #323068;
+        margin-bottom: 0px;
+        line-height: 3rem;
+    }  
+
+    .description {
+        font-size: 10px;
+        color: rgb(65, 65, 65);
+        font-weight: bold;
+    }
+
+    img {
+        width: 50vw;
+    }
+
+    .btn {
+        width: 50%;
+        padding: 5px 3px;
+    }
+
+    .nav-button {
+        font-size: 10px;
+        
+    }
+
+    .list .list-item {
+        padding-right: 2%;
+        font-size: 15px;
+    }
+    .list {
+        padding: 0 0%;
+    }
+    
+
+}
+
+
+@media screen and (max-width:707px){
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-container > :first-child{ 
+        align-items: center;
+        justify-content: s;
+    }
+
+    img {
+        display: none;
+    }
+
+    .container {
+        padding-left: 0%;
+    }
+
+    .heading-text {
+        font-size: 20px;
+
+    }
+    .banner-container {
+        padding: 0% 0%;
+    }
+
+    
+
+
+
+}
+
+
+
